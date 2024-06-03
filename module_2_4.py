@@ -7,7 +7,7 @@ for x in numbers:
     is_prime = True
     for i in range(2, x):
     # с точки зрения математики тут можно было бы написать
-    # for i in range(2, int(x ** 0.5)+1):
+    # for i in range(2, int(x ** 0.5) + 1):
         if x % i == 0:
             is_prime = False
             break
