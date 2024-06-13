@@ -1,9 +1,7 @@
 def calculate_structure_sum(*args, **kwargs):
     sum = 0
     for x in args:
-        if isinstance(x, int):
-            sum += x
-        elif isinstance(x, float):
+        if isinstance(x, (int, float)):
             sum += x
         elif isinstance(x, str):
             sum += len(x)
